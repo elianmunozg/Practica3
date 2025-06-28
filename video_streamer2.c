@@ -73,7 +73,7 @@ int main(int argc, char *argv[]) {
     g_object_set(G_OBJECT(encoder), "insert-sps-pps", TRUE, NULL);
     g_object_set(G_OBJECT(identity), "silent", FALSE, NULL);
     g_object_set(G_OBJECT(payloader), "pt", 96, NULL);
-    g_object_set(G_OBJECT(sink), "host", "192.168.0.113", "port", 5000, NULL);
+    g_object_set(G_OBJECT(sink), "host", "192.168.0.109", "port", 5000, NULL);
 
     // Añadir todos los elementos al pipeline
     gst_bin_add_many(GST_BIN(pipeline), 
